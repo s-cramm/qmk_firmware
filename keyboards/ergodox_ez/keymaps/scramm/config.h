@@ -5,8 +5,3 @@
 
 // keys per scan
 #define QMK_KEYS_PER_SCAN 4
-
-// n key rollover
-#define FORCE_NKRO
-
-
