@@ -1,5 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "version.h"
+#include "functions/shift_toggle.c"
 
 #define BASE 0 // default layer
 #define NUMP 1 // Numpad
@@ -139,30 +140,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		_______,
 		_______,	_______,	_______
 	),
-};
-
-bool shift_status(void) {
-	if ((keyboard_report->mods & (MOD_BIT(KC_LSFT))) != 0) {
-		return true;
-	} else if ((keyboard_report->mods & (MOD_BIT(KC_RSFT))) != 0) {
-		return true;
-	}
-	return false;
-};
-
-bool custom_layer_toggle(int layer, keyrecord_t *record) {
-	if (record->event.pressed) {
-		if (shift_status()) {
-			layer_invert(layer);
-		} else {
-			layer_on(layer);
-		}
-	} else {
-		if (!shift_status()) {
-			layer_off(layer);
-		}
-	}
-	return false;
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
