@@ -1,9 +1,13 @@
-#include "../../config.h"
+// configure features
+#define DEBOUNCE 8
+#undef TAPPING_TERM
+#define TAPPING_TERM 500
+#define SCL_CLOCK 400000L
 
-// debounce
-#undef DEBOUNCE
-#define DEBOUNCE 7
-#define DEBOUNCING_DELAY 0
+// enable features
+#define FORCE_NKRO
 
-// keys per scan
-#define QMK_KEYS_PER_SCAN 4
+// unused features to disable
+#define NO_ACTION_ONESHOT
+#define NO_ACTION_TAPPING
+#define NO_ACTION_MACRO
