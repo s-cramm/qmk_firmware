@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		_______,	KC_F,		KC_G,			KC_C,		KC_R,		KC_L,		KC_SLASH,
 					KC_D,		KC_H,			KC_T,		KC_N,		KC_S,		KC_MINUS,
 		T_FCTN,		KC_B,		KC_M,			KC_W,		KC_V,		KC_Z,		KC_BSLASH,
-								KC_SLW,			_______,	LCTL(KC_S),	KSC,		OSL(NAVI),
+								KC_SLW,			_______,	LCTL(KC_S),	KSC,		_______,
 		// right hand thumb cluster
 		KC_F13,		KC_PSCREEN,
 		KC_F14,
