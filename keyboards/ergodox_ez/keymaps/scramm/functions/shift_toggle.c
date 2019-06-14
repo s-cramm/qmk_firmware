@@ -1,7 +1,7 @@
 
 // checks whether left shift is being held
 bool is_lsft_pressed(void) {
-	if ((keyboard_report->mods & (MOD_BIT(KC_LSFT))) != 0) {
+	if ((get_mods() & (MOD_BIT(KC_LSFT))) != 0) {
 		return true;
 	}
 	return false;
