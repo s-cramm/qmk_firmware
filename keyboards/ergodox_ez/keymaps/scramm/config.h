@@ -2,7 +2,7 @@
 
 // debounce
 #undef DEBOUNCE
-#define DEBOUNCE 3
+#define DEBOUNCE 7
 #define DEBOUNCING_DELAY 0
 
 // keys per scan
