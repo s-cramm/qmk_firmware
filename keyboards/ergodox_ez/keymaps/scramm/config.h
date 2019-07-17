@@ -1,5 +1,5 @@
 // configure features
-#define DEBOUNCE 8
+#define DEBOUNCE 11
 #undef TAPPING_TERM
 #define TAPPING_TERM 500
 #define SCL_CLOCK 400000L
